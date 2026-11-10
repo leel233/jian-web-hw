@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>江西吉安 · 江南望郡</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", sans-serif;
+    background: #eef1f4;
+    color: #333;
+    line-height: 1.9;
+    padding: 40px 16px;
+  }
+
+  .card {
+    max-width: 980px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  /* ---------- 页眉 ---------- */
+  header {
+    padding: 36px 44px 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  header h1 {
+    font-size: 30px;
+    letter-spacing: 6px;
+    color: #1a3d5c;
+    font-weight: 700;
+  }
+
+  header h1 span {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #8a9aab;
+    margin-left: 14px;
+    font-weight: 400;
+  }
+
+  header p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #8a9aab;
+    letter-spacing: 2px;
+  }
+
+  /* ---------- 大图 ---------- */
+  .hero {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .hero img {
+    display: block;
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    object-position: center 58%;
+  }
+
+  .hero figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 1px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  }
+
+  /* ---------- 图文行 ---------- */
+  .row {
+    display: flex;
+    gap: 22px;
+    padding: 26px 44px;
+    border-bottom: 1px solid #f2f2f2;
+    align-items: flex-start;
+    transition: background 0.25s;
+  }
+
+  .row:hover { background: #fafbfc; }
+  .row:last-of-type { border-bottom: none; }
+
+  .thumb {
+    flex: 0 0 220px;
+    margin: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #f0f3f6;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  }
+
+  .thumb img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .row:hover .thumb img { transform: scale(1.05); }
+
+  .text { flex: 1; min-width: 0; }
+
+  .text h2 {
+    font-size: 17px;
+    color: #1a3d5c;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  /* 截图里那种加粗斜体的地名 */
+  .text h2 em {
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .text p {
+    font-size: 14px;
+    color: #55606b;
+    text-align: justify;
+    text-indent: 2em;
+  }
+
+  /* ---------- 页脚 ---------- */
+  footer {
+    padding: 22px 44px 30px;
+    font-size: 12px;
+    color: #a8b3be;
+    text-align: center;
+    border-top: 1px solid #f2f2f2;
+    letter-spacing: 1px;
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width: 640px) {
+    body { padding: 16px 10px; }
+    header { padding: 24px 22px 16px; }
+    header h1 { font-size: 22px; letter-spacing: 3px; }
+    .hero img { height: 200px; }
+    .row {
+      flex-direction: column;
+      padding: 20px 22px;
+      gap: 14px;
+    }
+    .thumb { flex: none; width: 100%; }
+    .thumb img { height: 180px; }
+    footer { padding: 18px 22px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<article class="card">
+
+  <header>
+    <h1>江西吉安<span>JI'AN</span></h1>
+    <p>江南望郡 · 文章节义之邦</p>
+  </header>
+
+  <!-- 大图：赣江穿城 -->
+  <figure class="hero">
+    <img src="hero.jpg" alt="赣江与吉安城市天际线">
+    <figcaption>赣江穿城而过，对岸是吉安城区的天际线</figcaption>
+  </figure>
+
+  <!-- 第一行：白鹭洲书院 -->
+  <section class="row">
+    <figure class="thumb">
+      <img src="shuyuan.jpg" alt="白鹭洲书院门楼">
+    </figure>
+    <div class="text">
+      <h2><em>白鹭洲书院</em></h2>
+      <p>位于吉安市吉州区沿江路 248 号，南宋吉州知军江万里创建于南宋淳祐元年（1241 年）。宋代在白鹭洲上创建书院时，依洲名而称之为“白鹭洲书院”，为江西四大书院之一。现存古建筑除风月楼、云章阁外，尚有中山院、文山院、红楼，还有泮月池、复古亭等。书院在当时起了榜样领头作用，遍及吉州县城乡的千百书院相继建立繁荣起来。2013 年 3 月 5 日，白鹭洲书院被国务院公布为第七批全国重点文物保护单位。</p>
+    </div>
+  </section>
+
+  <!-- 第二行：江西吉安钟鼓楼 -->
+  <section class="row">
+    <figure class="thumb">
+      <img src="zhonggulou.jpg" alt="江西吉安钟鼓楼，门首嵌古青原台石额">
+    </figure>
+    <div class="text">
+      <h2><em>江西吉安钟鼓楼</em></h2>
+      <p>位于吉安市吉州区沿江路白鹭洲公园东南侧，濒临赣江，与白鹭洲隔水相望。建于北宋政和元年（1111 年），原名古青原台，民间习惯称其为“钟鼓楼”，是古城吉安的标志性建筑之一。清雍正元年（1723 年）增修为三层，雄伟壮观，如城阙状。现存建筑座西朝东，砖木结构，占地 404.8 平方米，通高 18.9 米，台基高 2.15 米。主楼三层，重檐翘角，四周设有外回廊，一楼门首嵌刘绎书“古青原台”石额，三楼悬钟遗迹尚存，属省级文物保护单位。</p>
+    </div>
+  </section>
+
+  <footer>图片来自网络，仅用于前端课程练习</footer>
+
+</article>
+
+</body>
+</html>
